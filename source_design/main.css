@@ -1,0 +1,155 @@
+body{
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #2C4459;
+  }
+  
+  .logo{
+    margin-left: 2rem;
+  }
+  span{
+    text-transform: uppercase;
+    color: #91A7B6;
+  }
+
+  button{
+    margin-right: 2rem;
+    background-color: #2C4459;
+    padding: 0.5rem 1rem;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+section{
+    background-color: #F5F9FC;
+}
+
+  .mainsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mainsection__left {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+  .mainsection__left h1 {
+    font-size: 36px;
+    color: #2C4459;
+  }  
+  .mainsection__right {
+    display: flex;
+  align-items: center;
+  }
+  .mainsection__right img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group input,
+  .input-group button {
+    box-sizing: border-box;
+    height: 40px;
+  }
+  .input-group input{
+    background-color: #E2EAF0;
+    border: none;
+    width: 350px;
+    padding-left: 10px;
+  }
+  .input-group input::placeholder {
+    color:#91A7B6;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    padding: 150px;
+    color: #2C4459;
+  }
+
+  .features a{
+    font-weight: 600;
+  }
+
+  @media (max-width: 725px) {
+    .navbar nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      
+    
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      padding-right: 2rem;
+    }
+    
+    .navbar ul.active {
+        display: flex;
+      }
+      .header-wrapper {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+      }
+      .hamburger {
+        display: block;
+        cursor: pointer;
+        order: -1;
+        padding-left: 2rem;
+      }
+      .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: #2C4459;
+      }
+    
+    .mainsection {
+      grid-template-columns: 1fr;
+    }
+    
+    .features {
+      grid-template-columns: 1fr;
+      padding-left: 2rem;
+    }
+    .btn-fade{
+        display: none;
+    }
+  }
+  
+  
