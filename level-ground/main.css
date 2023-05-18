@@ -1,0 +1,219 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  body {
+    margin: 0;
+  }  
+.fullscreen-bg {
+    height: 90vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+  }
+  
+  .fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    padding-top: 1.5rem;
+    width: 100%;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .navbar nav div {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .donate-button{
+    margin-right: 2rem;
+    color: #66768A;
+    background-color: white;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.92rem;
+  }
+  .fullscreen-bg > div:nth-of-type(2) {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .fullscreen-bg .video-text h1{
+    font-size: 100px;
+    font-weight: 600;
+    
+  }
+  .fullscreen-bg .video-text h3{
+    font-size: 31px;
+    font-weight: 300;
+    font-style: italic;
+    max-width: 45%;
+  }
+  .why-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+  }
+  .why-section p{
+    width: 20%;
+  }
+  .why-section h2{
+    font-size: 42px;
+  }
+  .img-section {
+    padding-top: 10rem;
+    background-color: #DBDFE2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding-bottom: 10rem;
+  }
+  .img-section p{
+    padding-bottom: 2rem;
+  }
+  
+  .img-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  
+  .img-section img {
+    width: 500px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  .img-section button{
+    border: 2px solid #66768A;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 1.15rem;
+    cursor: pointer;
+    width: 200px;
+  }
+  .img-section h4{
+    font-size: 28px;
+  }
+  footer{
+    background-color: #161F2A;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2.5rem 3rem 2.5rem;
+  }
+  .volunteer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+  }
+  .volunteer-section p{
+    width: 20%;
+    padding-bottom: 2rem;
+  }
+  .volunteer-section button{
+    border: 2px solid #66768A;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 1.15rem;
+    cursor: pointer;
+    width: 200px;
+  }
+  .volunteer-section h2{
+    font-size: 42px;
+  }
+  footer{
+    color: white;
+  }
+  footer i {
+    color: white;
+    padding-bottom: 2rem;
+    margin-right: 0.5rem;
+    
+  }
+  footer span{
+    color: #66768A;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  footer ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+
+  .white-line {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 2rem;
+  }
+  button:hover{
+    background-color: #161F2A;
+    color: white;
+  }
+
+
+
+  
+  
